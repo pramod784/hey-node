@@ -1,0 +1,7 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="/styles.css"><title>Weather Result</title></head>
+<body><div class="box"><h2><%= w.name %> Weather</h2>
+<p>Temp: <%= w.main.temp %>°C</p>
+<p>Humidity: <%= w.main.humidity %>%</p>
+<p>Condition: <%= w.weather[0].description %></p>
+<a href="/">Search again</a>
+</div></body></html>

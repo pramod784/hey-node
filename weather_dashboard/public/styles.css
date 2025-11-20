@@ -1,0 +1,4 @@
+.box{width:300px;margin:50px auto;padding:20px;border:1px solid #ccc;border-radius:10px;text-align:center;font-family:sans-serif;}
+input{padding:8px;width:80%;}
+button{padding:8px;margin-top:10px;}
+.err{color:red;margin-top:10px;}

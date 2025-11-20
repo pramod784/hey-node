@@ -1,0 +1,5 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="/styles.css"><title>Weather</title></head>
+<body><div class="box"><h2>Weather Search</h2>
+<form action="/weather"><input name="city" placeholder="Enter city"><button>Search</button></form>
+<% if(typeof error !== 'undefined'){ %><p class="err"><%= error %></p><% } %>
+</div></body></html>
