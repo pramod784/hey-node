@@ -1,14 +1,10 @@
-// Modules protect their variables and functions from leaking
 
-//console.log("Sum Module Executed");
-require("../xyz.js");
-function calculateSum(a, b) {
-  const sum = a + b;
-
-  console.log(sum);
+// Define a function that adds two numbers
+function add(a, b) {
+  return a + b;
 }
-
-module.exports = { calculateSum };
-
-// module.exports.x = x;
-// module.exports.calculateSum = calculateSum;
+function concat_strings(str1, str2) {
+  return str1 + str2;
+}
+// Export the function using module.exports
+module.exports = {add, concat_strings};

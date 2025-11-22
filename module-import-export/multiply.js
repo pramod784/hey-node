@@ -1,13 +1,12 @@
-require("../xyz.js");
 
 function calculateMultiply(a, b) {
   const result = a * b;
-
-  console.log(result);
+  console.log("Multiplication result",result);
+  return result;
 }
 
-setTimeout(() => {
-  console.log("setTimout");
-}, 3000);
+// setTimeout(() => {
+//   console.log("setTimout");
+// }, 3000);
 
 module.exports = { calculateMultiply };
