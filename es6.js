@@ -99,3 +99,74 @@ const fetchAsyncData = async () => {
 };
 
 fetchAsyncData();
+
+
+// demo from desk
+
+// Ecma script
+// arrow function
+// const myfun = (a,b,c=0)=>{
+//   //console.log(a+b);
+//   return a+b+c;
+// }
+
+// console.log(myfun(2,4,1));
+// let studename = "john doe";
+// let designation = "'developer";
+
+// let myintro = "my name is "+studename+". i am a "+designation;
+// let myintro2 = `my name is ${studename}. i am a ${designation}`;
+// console.log(myintro);
+// console.log(myintro2);
+
+
+
+
+/// destructing 
+// let studdata = {
+//                 name:"Pramod",
+//                 age:24, 
+//                 designation:"developer", 
+//                 address:{city:"pune", state:"maharashtra"}
+//               };
+// let { name ,age, designation} = studdata;
+// console.log(name);
+// console.log(age);
+// console.log(designation);
+
+
+// const laptop_conf = {
+//     brand:"dell",
+//     ram:"8gb",
+//     processor:"i5",
+//     storage:"1tb",
+//     display:"15.6 inch",
+//     graphics:"2gb"
+// };
+
+// laptop_conf.brand = "Apple";
+// console.log(laptop_conf);
+
+
+// spread operator
+// let arr1 = [2,4,6,8];
+// let arr2 = [1,3,5,7,9]; 
+// //let combinedarr = [...arr1, ...arr2];
+// let combinedarr = [arr1,arr2];
+// console.log(combinedarr)
+
+
+let flight_data = {
+  name:"air india",
+  ticket_price:5000,
+  from:"pune",
+  to:"delhi"  
+}
+
+let flight_data2 = {...flight_data};
+
+flight_data2.from = "delhi";
+flight_data2.to = "pune";
+
+console.log(flight_data);
+console.log(flight_data2);
