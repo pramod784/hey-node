@@ -22,4 +22,20 @@ let studentdata = [
         marks:[88, 76, 91, 85]
     }
 ];
-console.log(studentdata)
+let updated_studdata = studentdata.map( (student) => {
+    
+    student.marks = student.marks.map((mark) => {
+        return mark+5;
+    });
+
+    return student
+});
+console.log(updated_studdata);
+
+// studentdata.forEach(element => {
+//     //console.log("single element",element.marks);
+//     element.marks.map( (mark, index) => {
+//         console.log(`Mark ${index + 1}: ${mark+5}`);
+//     });
+//     console.log("------------------------------");
+// });
